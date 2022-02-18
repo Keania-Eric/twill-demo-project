@@ -4,7 +4,7 @@ namespace App\Http\Requests\Admin;
 
 use A17\Twill\Http\Requests\Admin\Request;
 
-class PageRequest extends Request
+class ProjectRequest extends Request
 {
     public function rulesForCreate()
     {
@@ -14,7 +14,9 @@ class PageRequest extends Request
     public function rulesForUpdate()
     {
         return [
-           
+            'url'=> 'required|url',
+            'headline'=> 'required|string',
+            'description'=> 'required'
         ];
     }
 }

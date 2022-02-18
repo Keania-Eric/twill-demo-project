@@ -6,3 +6,4 @@ use Illuminate\Support\Facades\Route;
 // Route::module('posts');
 
 Route::module('pages');
+Route::module('projects');
