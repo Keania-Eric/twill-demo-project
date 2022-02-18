@@ -15,7 +15,11 @@ class Project extends Model
         'title',
         'description',
         'url',
-        'headline'
+        'headline',
+        'sector',
+        'launch_date',
+        'commercial',
+        'layout'
     ];
     
     public $slugAttributes = [
@@ -30,26 +34,15 @@ class Project extends Model
                     'ratio' => 16 / 9,
                 ],
             ],
-            'mobile' => [
+            
+        ],
+        'mobile'=> [
+            'default' => [
                 [
-                    'name' => 'mobile',
+                    'name' => 'default',
                     'ratio' => 1,
                 ],
             ],
-            'flexible' => [
-                [
-                    'name' => 'free',
-                    'ratio' => 0,
-                ],
-                [
-                    'name' => 'landscape',
-                    'ratio' => 16 / 9,
-                ],
-                [
-                    'name' => 'portrait',
-                    'ratio' => 3 / 5,
-                ],
-            ],
-        ],
+        ]
     ];
 }

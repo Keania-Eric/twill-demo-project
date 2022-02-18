@@ -31,7 +31,7 @@ class AddFieldsToPages extends Migration
     {
         Schema::table('pages', function (Blueprint $table) {
             //
-            $table->dropColumns(['title', 'description', 'headline', 'url']);
+            $table->dropColumn(['title', 'description', 'headline', 'url']);
         });
     }
 }

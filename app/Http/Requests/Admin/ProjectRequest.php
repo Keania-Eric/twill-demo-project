@@ -16,7 +16,11 @@ class ProjectRequest extends Request
         return [
             'url'=> 'required|url',
             'headline'=> 'required|string',
-            'description'=> 'required'
+            'description'=> 'required',
+            'sector'=> 'required',
+            'commercial'=> 'required',
+            'launch_date'=> 'required',
+            'layout'=> 'required'
         ];
     }
 }
