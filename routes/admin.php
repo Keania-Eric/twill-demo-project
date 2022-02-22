@@ -8,3 +8,4 @@ use Illuminate\Support\Facades\Route;
 Route::module('pages');
 Route::module('projects');
 Route::module('reports');
+Route::module('developers');

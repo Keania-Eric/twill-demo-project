@@ -10,5 +10,10 @@ return [
     'projects'=> [
         'title'=> 'Projects',
         'module'=> true
+    ],
+
+    'developers'=> [
+        'title'=> 'Developers',
+        'module'=> true
     ]
 ];
