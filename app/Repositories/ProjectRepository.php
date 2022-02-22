@@ -15,4 +15,11 @@ class ProjectRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    protected $repeaters = [
+        'reports'=> [
+            'model'=> 'Report',
+            'relation'=> 'reports'
+        ]
+    ];
 }

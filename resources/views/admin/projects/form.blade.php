@@ -1,6 +1,7 @@
 @extends('twill::layouts.form', [
     'additionalFieldsets' => [
         ['fieldset' => 'project-covers', 'label' => 'Project Covers'],
+        ['fieldset' => 'project-reports', 'label' => 'Project Reports'],
     ]
 ])
 
@@ -95,6 +96,12 @@
         'name' => 'mobile',
         'label' => 'Project Mobile Cover',
         'fieldNote' => 'Minimum image width: 1500px'
+    ])
+    @endformFieldset
+
+    @formFieldset(['id' => 'project-reports', 'title' => 'Project Reports'])
+        @formField('repeater', [
+        'type' => 'reports'
     ])
     @endformFieldset
 @stop
