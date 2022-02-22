@@ -22,4 +22,8 @@ class ProjectRepository extends ModuleRepository
             'relation'=> 'reports'
         ]
     ];
+
+    protected $relatedBrowsers = [
+        'developers'
+    ];
 }

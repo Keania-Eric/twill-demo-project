@@ -2,6 +2,7 @@
     'additionalFieldsets' => [
         ['fieldset' => 'project-covers', 'label' => 'Project Covers'],
         ['fieldset' => 'project-reports', 'label' => 'Project Reports'],
+        ['fieldset' => 'project-developers', 'label' => 'Project Developers'],
     ]
 ])
 
@@ -103,5 +104,14 @@
         @formField('repeater', [
         'type' => 'reports'
     ])
+    @endformFieldset
+
+    @formFieldset(['id'=> 'project-developers', 'title'=> 'Project Developers'])
+            @formField('browser', [
+                'moduleName'=> 'developers',
+                'name'=> 'developers',
+                'label'=> 'Developers',
+                'max'=> 3
+            ])
     @endformFieldset
 @stop
