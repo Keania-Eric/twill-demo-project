@@ -26,4 +26,11 @@ class ProjectRepository extends ModuleRepository
     protected $relatedBrowsers = [
         'developers'
     ];
+
+
+    public function allProjects()
+    {
+        return $this->model->published()->orderBy('title')
+        ->get();
+    }
 }
